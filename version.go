@@ -378,3 +378,17 @@ func (v *Version) String() string {
 func (v *Version) Original() string {
 	return v.original
 }
+
+func (v *Version) Clone() *Version {
+	return &Version{
+		metadata: v.metadata,
+		pre:      v.pre,
+		segments: append([]int64(nil), v.segments...),
+		si:       v.si,
+		original: v.original,
+	}
+}
+
+func (v *Version) ToMutator() *Mutator {
+	return &Mutator{Version: v}
+}
