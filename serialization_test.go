@@ -55,7 +55,7 @@ func TestVersion_UnmarshalJSON(t *testing.T) {
 			t.Fatalf("error for input %s: %s", tc.v, err)
 		}
 		if !tc.v.Equal(&in) {
-			t.Fatalf("input: %s\nexpected: %s\nactual: %s",
+			t.Fatalf("input: %v\nexpected: %v\nactual: %v",
 				tc.v, tc.v, in)
 		}
 	}
