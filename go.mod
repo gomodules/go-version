@@ -1,1 +1,3 @@
-module github.com/hashicorp/go-version
+module gomodules.xyz/version
+
+go 1.12
