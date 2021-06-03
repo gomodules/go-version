@@ -1,3 +1,5 @@
+`This library is not maintained any more. Use github.com/Masterminds/semver@v3 in new code and migrate existing code when possible.`
+
 # Versioning Library for Go
 [![Build Status](https://travis-ci.org/hashicorp/go-version.svg?branch=master)](https://travis-ci.org/hashicorp/go-version)
 
